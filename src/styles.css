@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #141c16;
+  --color-forest: #101612;
+  --color-canopy: #1b2820;
+  --color-cream: #f3eee4;
+  --color-paper: #faf7f1;
+  --color-thread: #c6a15a;
+  --color-thread-deep: #7a5524;
+  --color-moss: #3f4c44;
+  --color-mist: #c9cfc8;
+  --color-line: #ddd4c6;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-forest);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    font-weight: 360;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-thread);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+.drop::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 3.35rem;
+  line-height: 0.78;
+  padding-right: 0.55rem;
+  padding-top: 0.28rem;
+  color: var(--color-thread-deep);
+  font-weight: 560;
+}
+
+.frame-wide {
+  aspect-ratio: 3 / 2;
+}
+
+.frame-tall {
+  aspect-ratio: 3 / 4;
+}
+
+.scrim {
+  background: linear-gradient(
+    to top,
+    var(--color-forest) 0%,
+    color-mix(in srgb, var(--color-forest) 55%, transparent) 42%,
+    color-mix(in srgb, var(--color-forest) 18%, transparent) 100%
+  );
+}
