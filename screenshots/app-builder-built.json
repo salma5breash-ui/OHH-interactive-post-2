@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "The Invisible Thread",
+      "hasCanvas": false,
+      "bodyTextLen": 2450,
+      "bodyTextHash": "0fd862e78f9e524583d4d2b990961447b2bb8b07785f511a4adc51f06fddcf8b",
+      "bodyTextPrefix": "ONE HEALTH · A FIELD NOTE The Invisible Thread Why your health d",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "The Invisible Thread",
+      "hasCanvas": false,
+      "bodyTextLen": 2450,
+      "bodyTextHash": "0fd862e78f9e524583d4d2b990961447b2bb8b07785f511a4adc51f06fddcf8b",
+      "bodyTextPrefix": "ONE HEALTH · A FIELD NOTE The Invisible Thread Why your health d",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
